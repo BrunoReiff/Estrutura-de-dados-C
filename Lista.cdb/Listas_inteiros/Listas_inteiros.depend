@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1759865096 source:c:\users\bigre\desktop\codigos\c\estrutura-de-dados-c\listas\lista.cdb\listas_inteiros\lista_inteiros.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"lista_inteiros.h"
+
+1759865096 c:\users\bigre\desktop\codigos\c\estrutura-de-dados-c\listas\lista.cdb\listas_inteiros\lista_inteiros.h
+
+1759864270 source:c:\users\bigre\desktop\codigos\c\estrutura-de-dados-c\listas\lista.cdb\listas_inteiros\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_inteiros.h"
+

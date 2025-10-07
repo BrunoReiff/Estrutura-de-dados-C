@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1759856649 source:c:\users\bigre\desktop\codigos\c\estrutura-de-dados-c\listas\lista.cdb\listas\lista.c
+	<stdio.h>
+	"lista.h"
+
+1759856530 c:\users\bigre\desktop\codigos\c\estrutura-de-dados-c\listas\lista.cdb\listas\lista.h
+
+1759856563 source:c:\users\bigre\desktop\codigos\c\estrutura-de-dados-c\listas\lista.cdb\listas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
