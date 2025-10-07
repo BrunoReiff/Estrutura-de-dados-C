@@ -88,25 +88,27 @@ void ordena(TipoLista_Inteiros *Lista)
 
 int verf_ordenacao(TipoLista_Inteiros Lista)
 {
-    TipoLista_Inteiros ListaOrdenada;
-    ListaOrdenada = Lista;
-    ordena(&ListaOrdenada);
+    int crescente = 1, decrescente = 1;
     for(int i = Lista.Primeiro - 1; i < Lista.Ultimo - 1; i++)
     {
-        if(Lista.item[i].inteiro != ListaOrdenada.item[i].inteiro)
+        for(int j = i; j < Lista.Ultimo - 1; j ++)
         {
-            return 0;
+            if(Lista.item[i].inteiro > Lista.item[j].inteiro)
+                crescente = 0;
         }
     }
-    inverte(&Lista, &ListaOrdenada);
+
     for(int i = Lista.Primeiro - 1; i < Lista.Ultimo - 1; i++)
     {
-        if(Lista.item[i].inteiro != ListaOrdenada.item[i].inteiro)
+       for(int j = i; j < Lista.Ultimo - 1; j ++)
         {
-            return 0;
+            if(Lista.item[i].inteiro < Lista.item[j].inteiro)
+                decrescente = 0;
         }
     }
-    return 1;
+    if(crescente || decrescente)
+        return 1;
+    return 0;
 }
 
 void inverte(TipoLista_Inteiros *Lista, TipoLista_Inteiros *ListaInvertida)
@@ -118,3 +120,4 @@ void inverte(TipoLista_Inteiros *Lista, TipoLista_Inteiros *ListaInvertida)
         ListaInvertida->Ultimo++;
     }
 }
+
